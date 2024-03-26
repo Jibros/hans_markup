@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="author" content="한스타일, 리앤한, HANSTYLE">
+	<meta name="Title" content=" HANSTYLE.com, 한스타일 해외 브랜드 온라인 편집몰">
+	<meta name="description" content="HANSTYLE.com, 한스타일 해외 브랜드 온라인 편집몰">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="HANSTYLE.com, 한스타일 해외 브랜드 온라인 편집몰">
+	<meta property="og:image" content="https://d2zjlxn1rmjreq.cloudfront.net/assets/images/bi/256.png">
+	<meta property="og:url" content=" https://shop.ihanstyle.com">
+	<meta property="og:description" content="럭셔리 해외 브랜드 온라인 편집몰">
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:site_name" content="한스타일 | HANSTYLE.com">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>HANSTYLE Admin</title>
+	<link rel="shortcut icon" href="https://nshop.ihanstyle.com/favicon.png">
+	<!-- <link rel="stylesheet" type="text/css" href="https://d2zjlxn1rmjreq.cloudfront.net/assets/admin/css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"> 
+</head>
+
+<div class="app-wrapper">
+	<!-- 상단 공통 영역 -->
+	<header class="page-header">
+		<h1 class="bi"><a href=“javascript:;”><img src="https://d2zjlxn1rmjreq.cloudfront.net/assets/images/common/bi.svg" alt="hanstyle"></a></h1>
+		<ul class="util">
+			<li><span>최민경님</span></li>
+			<li><a href="#reset-pw" class="open-modal">비밀번호변경</a></li>
+			<li><a href="javascript:;">LOGOUT</a></li>
+			<li><a href="javascript:;">QUERY</a></li>
+		</ul>
+	</header>
+
+	<section class="contents">
+		<!-- gnb -->
+		<input class="nav-check" type="checkbox" id="nav-check" /><label class="nav-icon" for="nav-check"><span class="nav-sticks"></span></label>
+		<aside class="side-navigation">
+			<a href="javascript:;" class="nav-setting">메뉴설정</a>
+			<div class="lnb">
+				<ul>
+					<li>
+						<a href="javascript:;">상품/전시</a>
+						<ul>
+							<li>
+								<a href="javascript:;">2Depth</a>
+								<ul>
+									<li><a href="javascript:;">3Depth</a></li>
+									<li><a href="javascript:;">3Depth</a></li>
+									<li><a href="javascript:;">3Depth</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">2Depth</a>
+								<ul>
+									<li><a href="javascript:;">3Depth</a></li>
+									<li><a href="javascript:;">3Depth</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">2Depth</a></li>
+							<li><a href="javascript:;">2Depth</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="javascript:;">주문/배송</a>
+						<ul>
+							<li>
+								<a href="javascript:;">메뉴명이 길어진다면 두줄이겠지</a>
+								<ul>
+									<li><a href="javascript:;">메뉴명이 길어진다면 두줄이겠지</a></li>
+									<li><a href="javascript:;">3Depth</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">2Depth</a>
+								<ul>
+									<li><a href="javascript:;">3Depth</a></li>
+									<li><a href="javascript:;">3Depth</a></li>
+									<li><a href="javascript:;">3Depth</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="javascript:;">회원</a>
+						<ul>
+							<li><a href="javascript:;">2Depth</a></li>
+							<li><a href="javascript:;">2Depth</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="javascript:;">영업관리</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">정산</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">통계</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">오프통계</a>
+					</li>
+
+					<li class="on">
+						<a href="javascript:;">게시판</a>
+						<ul>
+							<li><a href="javascript:;">공지사항</a>
+								<ul>
+									<li><a href="javascript:;">사이트 공지</a></li>
+									<li><a href="javascript:;">내부 공지</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">FAQ</a></li>
+							<li><a href="javascript:;">배너관리</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="javascript:;">영업망관리</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">기준정보</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">시스템</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">위탁판매</a>
+					</li>
+
+					<li>
+						<a href="javascript:;">파트너</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<!--// gnb -->
+
+		<!-- content-->
+		<span class="nav-category">상픔&#47;재고 &gt;<strong>상품등록</strong></span>
+		<section class="content-area w1200">
+			<h3>상품등록</h3>
+
+			<div class="btn-area">
+				<button type="button" class="btn btn-white"  onclick="window.open('../popup/search.html','new','scrollbars=yes,resizable=no width=1300 height=700');return false">상품 복사하기</button>
+			</div>
+			
+			<!-- 기본정보 -->
+			<p class="box-tit">기본 정보</p>
+			<div class="table-input-type mb50">
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="40%">
+						<col width="10%">
+						<col width="40%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>자체 상품코드</th>
+							<td colspan="3">
+								<div class="input-box">
+									<input type="text" class="txt wrong w40" placeholder="* 한글/공백/특수문자(-,_제외) 사용이 불가합니다." />
+									<p class="tip-msg">이미 존재하는 자체 상품코드입니다.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>브랜드<i>*</i></th>
+							<td colspan="3">
+								<div class="input-box">
+									<input  type="text" class="txt w30"/><button type="button" class="btn-search">검색</button>
+									<span class="info-txt">* 등록한 브랜드에 한하여 상품 등록이 가능합니다. 브랜드 추가 등록은 담당 MD에게 문의해주시기 바랍니다.</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>품목<i>*</i></th>
+							<td colspan="3">
+								<div class="input-box">
+									<select class="custom-select w40">
+										<option>전체</option>
+										<option>[Y]Yes</option>
+										<option>[N]No</option>
+									</select>
+									<span class="info-txt">* 품목에 따라 ’고시항목유형’이 자동반영되므로, 품목 변경시 입력된 고시항목이 리셋될 수 있습니다.</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>성별<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<select class="custom-select">
+										<option>전체</option>
+										<option>[Y]Yes</option>
+										<option>[N]No</option>
+									</select>
+								</div>
+							</td>
+							<th>컬러<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<select class="custom-select">
+										<option>전체</option>
+										<option>[Y]Yes</option>
+										<option>[N]No</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>출시년도<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<select class="custom-select">
+										<option>전체</option>
+										<option>[Y]Yes</option>
+										<option>[N]No</option>
+									</select>
+								</div>
+							</td>
+							<th>시즌<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<select class="custom-select">
+										<option>전체</option>
+										<option>[Y]Yes</option>
+										<option>[N]No</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>제조사<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" class="txt" />
+								</div>
+							</td>
+							<th>원산지<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" class="txt" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>정상이월구분</th>
+							<td colspan="3">
+								<div class="input-box">
+									<label class="inp">정상
+										<input type="radio" name="radio" checked>
+										<span class="checkmark radio"></span>
+									</label>
+									<label class="inp">이월
+										<input type="radio" name="radio">
+										<span class="checkmark radio"></span>
+									</label>
+									<span class="info-txt">*이월 선택 시, 아울렛관에 추가 노출됩니다.</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 가격/재고 -->
+			<p class="box-tit">가격/재고</p>
+			<div class="table-input-type mb50">
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="40%">
+						<col width="10%">
+						<col width="40%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>정상가<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" class="txt" placeholder="*판매가보다 낮을 수 없습니다." />
+								</div>
+							</td>
+							<th>판매가<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" class="txt" placeholder="*정상가보다 높을 수 없습니다." />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>재고<i>*</i></th>
+							<td colspan="3">
+								<div class="input-box">
+									<div class="add-box">
+										<input type="text" name="txt" class="txt txt-first" placeholder="옵션명"><input type="text" name="txt" class="txt" placeholder="재고">
+									</div>
+									<button type="button" class="btnAdd btn" value="Add">+ 옵션 추가</button> 
+									<span class="info-txt">* 한스타일 옵션명은 사이즈명에 최적화되어있습니다.</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>최대주문갯수</th>
+							<td colspan="3">
+								<div class="input-box">
+									<input type="text" class="txt w40" placeholder="*미입력 시 10으로 설정됩니다." /><span class="info-txt">* 최소주문갯수 설정 기능은 지원하지 않습니다.</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 배송/클레임 -->
+			<p class="box-tit">배송/클레임</p>
+			<div class="table-input-type mb50">
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="40%">
+						<col width="10%">
+						<col width="40%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>배송유형<i>*</i></th>
+							<td colspan="3">
+								<div class="input-box">
+									<select class="custom-select w40">
+										<option>전체</option>
+										<option>[Y]Yes</option>
+										<option>[N]No</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>반품가능여부</th>
+							<td>
+								<div class="input-box">
+									<label class="inp">Y
+										<input type="radio" name="radio" checked>
+										<span class="checkmark radio"></span>
+									</label>
+									<label class="inp">N
+										<input type="radio" name="radio">
+										<span class="checkmark radio"></span>
+									</label>
+								</div>
+							</td>
+							<th>교환가능여부</th>
+							<td>
+								<div class="input-box">
+									<label class="inp">Y
+										<input type="radio" name="radio" checked>
+										<span class="checkmark radio"></span>
+									</label>
+									<label class="inp">N
+										<input type="radio" name="radio">
+										<span class="checkmark radio"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 대표 이미지/상세 설명 -->
+			<p class="box-tit">대표 이미지/상세 설명</p>
+			<div class="table-input-type mb50">
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>대표이미지 1<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" name="txt" class="txt" placeholder="* 이미지 URL을 입력하거나 하기 영역을 클릭하여 직접 이미지를 업로드하시기 바랍니다. (이미지 업로드와 중복 등록 시 URL 기준 처리)">
+								</div>
+								<input type="file" name="imgFile" id="imgFile" accept="image/jpg" style="display:none;" onchange="fileChange(this)">
+								<div id="img_view" class="img-view-box"></div>
+								<p style="padding-top:45px">
+									<button type="button" class="btn open-modal" href="#layer-imgUpload" id="fileBtn">이미지 업로드</button>
+									<div class="mt10">*권장 사이즈: 1200*600 / 확장자: JPG, JPEG, PNG,GIF, BMP / 이미지 용량: 최대 3MB 이하 등록 가능</div>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>대표이미지 2</th>
+							<td>
+								<div class="input-box">
+									<input type="text" name="txt" class="txt" placeholder="* 이미지 URL을 입력하시기 바랍니다." >
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>대표이미지 3</th>
+							<td>
+								<div class="input-box">
+									<input type="text" name="txt" class="txt" placeholder="* 이미지 URL을 입력하시기 바랍니다.">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>상위 콘텐츠 html(본문)</th>
+							<td><textarea class="txt" placeholder="내용을 입력하세요"></textarea></td>
+						</tr>
+						<tr>
+							<th>하위 콘텐츠 html(본문)</th>
+							<td><textarea class="txt" placeholder="내용을 입력하세요"></textarea></td>
+						</tr>
+						<tr>
+							<th>상세설명(탭)</th>
+							<td><textarea class="txt" placeholder="내용을 입력하세요"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 고시항목 -->
+			<p class="box-tit">고시항목<span class="info-txt">* ‘고시항목’의 직접 입력 칼럼은 두 글자 이상 입력이 필수입니다.</span></p>
+			<div class="table-input-type">
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>고시항목유형</th>
+							<td>
+								<div class="input-box">
+									<input type="text" class="txt w40" value="[03]가방" disabled/>
+									<span class="info-txt">* 품목에 따라 ’고시항목유형’이  자동반영되므로, 품목 변경시 입력된 고시항목이 리셋될 수 있습니다.</span></p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>제품소재<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" name="txt" class="txt wrong">
+									<p class="tip-msg">두 글자 이상 입력 필수입니다.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>크기 (단위 : cm)<i>*</i></th>
+							<td>
+								<div class="input-box">
+									<input type="text" name="txt" class="txt">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-area btn-center">
+				<button type="button" class="btn">등록</button>
+			</div>
+		</section>
+		<!-- content-->
+
+		<!-- footer -->
+		<section include-html="../layout/footer.html"></section>
+	</section>
+</div>
+
+<!-- 이미지업로드 레이어 -->
+<div id="layer-imgUpload" class="modal-layer">
+	<div class="modal-content">
+		<h2>이미지 업로드</h2>
+		<button class="btn-close close-modal">닫기</button>
+		<div class="modal-body">
+			<div class="img-file">
+				<label for="file">이미지 파일</label>
+				<input type="file" class="txt" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 마크업 확인용 -->
+<script type="text/javascript" src="https://d2zjlxn1rmjreq.cloudfront.net/assets/admin/js/jquery.min_3.6.0.js"></script>
+<script type="text/javascript" src="https://d2zjlxn1rmjreq.cloudfront.net/assets/admin/js/includeHTML.js"></script>
+<script type="text/javascript" src="https://d2zjlxn1rmjreq.cloudfront.net/assets/admin/js/common.js"></script>
+<script>
+	includeHTML();
+
+	$(document).ready (function () {                
+		$('.btnAdd').click (function () {                                        
+			$('.add-box').append (                        
+				'<span><input type="text" name="txt" class="txt txt-first" placeholder="옵션명"><input type="text" name="txt" class="txt" placeholder="재고"></span><button type="button" class="btnRemove" value="Remove">삭제</button>'                    
+			); // end append                            
+			$('.btnRemove').on('click', function () { 
+				$(this).prev().remove ();
+				$(this).remove ();
+			});
+		});                                      
+	});
+</script>
+
+</body>
+</html>
