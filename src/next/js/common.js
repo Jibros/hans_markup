@@ -17,46 +17,57 @@ function catego() {
 }
 
 // 모바일 하단 바로가기
-var lastScrollTop = 0;
-var delta = 5;
-var fixHead = document.querySelector('.header-sub');
-var fixBox = document.querySelector('.service-gnb-btm');
-var fixBoxHeight = fixBox.offsetHeight;
-var didScroll;
-//스크롤 이벤트 
-window.onscroll = function(e) {
-	didScroll = true;
+const scrollHandler = {
+    lastScrollTop: 0,
+    delta: 5,
+    ticking: false,
+    fixHead: document.querySelector('.header-sub'),
+    fixBox: document.querySelector('.service-gnb-btm'),
+    
+    init() {
+        this.fixBoxHeight = this.fixBox.offsetHeight;
+        window.addEventListener('scroll', () => this.onScroll());
+    },
+    
+    onScroll() {
+        if (!this.ticking) {
+            requestAnimationFrame(() => {
+                this.hasScrolled();
+                this.ticking = false;
+            });
+            this.ticking = true;
+        }
+    },
+    
+    hasScrolled() {
+        const nowScrollTop = window.scrollY;
+        
+        // 스크롤 변화가 delta값 이하면 무시
+        if (Math.abs(this.lastScrollTop - nowScrollTop) <= this.delta) {
+            return;
+        }
+        
+        // 스크롤 다운
+        if (nowScrollTop > this.lastScrollTop && nowScrollTop > this.fixBoxHeight) {
+            this.fixHead.classList.add('sa-attached');
+            this.fixBox.classList.remove('show');
+        } 
+        // 스크롤 업
+        else if (nowScrollTop + window.innerHeight < document.body.offsetHeight) {
+            this.fixBox.classList.add('show');
+        }
+        
+        // 상단에 도달했을 때
+        if (nowScrollTop < this.fixHead.offsetHeight) {
+            this.fixHead.classList.remove('sa-attached');
+        }
+        
+        this.lastScrollTop = nowScrollTop;
+    }
 };
 
-//0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
-setInterval(function(){
-	if(didScroll){
-		hasScrolled();
-		didScroll = false;
-	}
-}, 250);
-
-function hasScrolled(){
-	var nowScrollTop = window.scrollY;
-	if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
-		return;
-	}
-	if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
-		//Scroll down
-    fixHead.classList.add('sa-attached');
-		fixBox.classList.remove('show');
-	}else{
-		if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
-			//Scroll up
-			fixBox.classList.add('show');
-		}
-	}
-    console.log(nowScrollTop)
-    if(nowScrollTop < fixHead.offsetHeight){
-        fixHead.classList.remove('sa-attached');
-    }
-	lastScrollTop = nowScrollTop;
-}
+// 스크롤 핸들러 초기화
+scrollHandler.init();
 
 // vh 높이 버그 계산
 const vh = window.innerHeight * 0.01;   // [1]
